@@ -1,0 +1,22 @@
+import java.util.*;
+public class Boards15
+{
+    public void main()
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a Number: ");
+        int n=s.nextInt();
+        int d;
+        int check=0;
+        while(n!=0)
+        { d=n%10;
+            if(d==0)
+            check=1;
+    }
+    if(check==1)
+    System.out.println("The Number is a Duck Number");
+          else  
+            System.out.println("The Number is not a Duck Number");
+    
+}
+}
