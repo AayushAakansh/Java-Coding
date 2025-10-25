@@ -1,0 +1,18 @@
+import java.util.*;
+public class Borads12
+{
+    public void main()
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int num = s.nextInt();
+        int r = num%7;
+        int last = num%10;
+        if(r==0 || last==7)
+        System.out.println("The Number is a Buzz Number");
+        else
+        System.out.println("The Number is not a Buzz Number");
+        
+    }
+    
+}
