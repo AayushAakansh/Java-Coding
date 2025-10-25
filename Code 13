@@ -1,0 +1,21 @@
+import java.util.*;
+public class Boards14
+{ 
+    public void main()
+    { Scanner s = new Scanner(System.in);
+        System.out.println("Enter Number 1: ");
+        int num1=s.nextInt();
+        System.out.println("Enter Number 2: ");
+        int num2=s.nextInt();
+        int hcf=0;
+        for(int i=1; i<=num1 && i<=num2; i++)
+        {
+            if(num1%i==0 && num2%i==0)
+            hcf=1;
+        }
+        if(hcf==1)
+            System.out.println("The Numbers are Co Prime");
+            else
+            System.out.println("The Numbers are not Co Prime");
+        }
+    }
