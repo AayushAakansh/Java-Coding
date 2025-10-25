@@ -1,0 +1,24 @@
+import java.util.*;
+public class Boards16
+{ public void main()
+    {
+        Scanner s =new Scanner(System.in);
+        System.out.println("Enter a Number: ");
+        int num=s.nextInt();
+        int d=0;
+        int sum=0;
+        while(num!=0)
+        {
+            d++;
+            num=num/10;
+        }
+        System.out.println("The Number of Digits in the Number are: " +d);
+        
+        if(d%2==0)
+        System.out.println("The Number contains Even number of Digits");
+        else
+        System.out.println("The Number Contains Odd Number of Digits");
+        
+    }
+    
+}
