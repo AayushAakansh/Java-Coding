@@ -1,0 +1,20 @@
+import java.util.*;
+public class Boards4
+{ public void main()
+    { Scanner s = new Scanner(System.in);
+        System.out.println("Enter a Number: ");
+        int num = s.nextInt();
+        int d;
+        int digits=0;
+        int sum=0;
+        while(num!=0)
+        { d=num%10;
+            sum=sum+d;
+            digits++;
+            num = num/10;
+        }
+        System.out.println("The Number of Digits are " +digits);
+        System.out.println("The Sum of the Digits are: " +sum);
+    }
+    
+}
