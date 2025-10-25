@@ -1,0 +1,49 @@
+import java.util.*;
+public class employee
+{
+    Scanner s = new Scanner(System.in);
+    int eno;
+    String ename;
+    int age;
+    double basic;
+    double net;
+    void accept()
+    {
+        System.out.println("Enter Employee Number: ");
+        eno = s.nextInt();
+        System.out.println("Enter Employee Name: ");
+        ename = s.next();
+        System.out.println("Enter The Age of the Employee: ");
+        age = s.nextInt();
+        System.out.println("Enter The Basic Salary of the Employee: ");
+        basic = s.nextDouble();
+        
+    }
+    void calculate()
+    {
+        double hra = 0.185*basic;
+        double da = 0.1745*basic;
+        double pf = 0.081*basic;
+        net = basic + hra + da - pf;
+        if(age>50)
+        net = net + 5000;
+        else
+        net=net+0;
+        
+    }
+    void print()
+    {
+        System.out.println("The Employee Number is: " +eno);
+        System.out.println("The Employee Name is: " +ename);
+        System.out.println("The Employee Age is: " +age);
+        System.out.println("The Basic Salary of the Employee is: " +basic);
+        System.out.println("The Net Salary of the Employee is: " +net);
+    }
+    public void main()
+    {
+        employee ob = new employee();
+        ob.accept();
+        ob.calculate();
+        ob.print();
+    }
+}
