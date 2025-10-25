@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Boards5
+{public void main()
+    { Scanner s = new Scanner(System.in);
+        System.out.println("Enter Physics Marks: ");
+        double phy = s.nextDouble();
+        System.out.println("Enter Chemisty Marks: ");
+        double chem = s.nextDouble();
+        System.out.println("Enter Biology Marks: ");
+        double bio = s.nextDouble();
+        
+        double avg = (phy+chem+bio)/3;
+        if(avg>=80)
+        System.out.println("Computer Studies Stream");
+        else if(avg>=60 && avg<80)
+        System.out.println("Bio-Science Stream");
+        else if(avg>=40 && avg<60)
+        System.out.println("Commerce Steam");
+        
+    
+    
+    }
+}
