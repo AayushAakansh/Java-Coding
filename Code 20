@@ -1,0 +1,22 @@
+import java.util.*;
+public class Boards21
+{
+    public void main()
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a Number: ");
+        int num = s.nextInt();
+        int check=0;
+        for(int i=1; i<=num; i++)
+        {
+            if(i*(i+1)==num)
+            check=1;
+            
+        }
+        if(check==1)
+        System.out.println("The Number is a Pronic Number");
+        else
+        System.out.println("The Number is not a Pronic Number");
+    }
+    
+}
