@@ -1,0 +1,20 @@
+import java.util.*;
+public class Boards1
+{
+    public void main()
+    { Scanner s = new Scanner(System.in);
+        System.out.println("Enter the Units consumed: ");
+        double unit = s.nextDouble();
+        double amount = 0;
+        if(unit<=200)
+        amount = 3.80*unit;
+        else if(unit>200 && unit<=300)
+        amount = 4.40*unit;
+        else if(unit>300 && unit<=400)
+        amount = unit*5.10;
+        else if(unit>400)
+        amount = unit*5.80;
+        System.out.println("The Amount to be Paid is: " +amount);
+        
+   
+}}
