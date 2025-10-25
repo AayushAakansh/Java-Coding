@@ -1,0 +1,27 @@
+import java.util.*;
+public class Boards20
+{
+    public void main()
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a Number: ");
+        int num=s.nextInt();
+        int d;
+        int sum=0;
+        while(num>9)
+        {
+        while(num!=0)
+        {
+            d=num%10;
+            sum=sum+(d*d);
+            num=num/10;
+        }
+        num=sum;
+        sum=0;
+    }
+    if(num==1)
+    System.out.println("The Number is a Happy Number");
+    else
+    System.out.println("The Number is not a Happy Number");
+}
+}
