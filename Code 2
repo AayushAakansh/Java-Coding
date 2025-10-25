@@ -1,0 +1,30 @@
+import java.util.*;
+public class Boards2
+{ 
+    public void main()
+    { Scanner s =new Scanner(System.in);
+       System.out.println("Enter Resistance 1: ");
+       double r1 = s.nextDouble();
+       System.out.println("Enter Resistance 2: ");
+       double r2 = s.nextDouble();
+       double R =0.0;
+       System.out.println("1. Series");
+       System.out.println("2. Parallel");
+       System.out.println("Enter your choice 1 or 2: ");
+       int cho = s.nextInt();
+       switch(cho)
+       {
+       case 1:
+        R= r1+r2;
+        break;
+        case 2:
+            R = (r1*r2) / (r1+r2);
+            break;
+            default: 
+                System.out.println("Invaid Choice");
+            }
+            System.out.println("The Equivalent Resistance is: " +R);
+        
+    
+}
+}
