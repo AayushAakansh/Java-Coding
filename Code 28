@@ -1,0 +1,50 @@
+import java.util.*;
+public class boards29
+{
+    Scanner s = new Scanner(System.in);
+    void print()
+    {
+        int k=1;
+        for(int i = 1; i<=4; i++)
+        { for(int j=1; j<=i; j++)
+            {
+                System.out.print(k);
+                k++;
+                
+            }
+    }
+}
+boolean print(int n)
+{
+    int d;
+    int sum=0;
+    
+    while(n!=0)
+    {
+        d=n%10;
+        sum=sum+d;
+        n=n/10;
+    }
+    int cube = sum*sum*sum;
+    if(n==cube)
+    System.out.println("It is a Dudency Number");
+    else
+    System.out.println("It is not a Dudency Number");
+    return(true);
+}
+
+void print(int a, char ch)
+{
+    double square;
+    double cube;
+    if(ch=='s' || ch=='S')
+    {square = a*a;
+    System.out.println("The Sqaure of the Number is: " +square);
+}
+    else if(ch=='c' || ch=='C')
+   {
+       cube = a*a*a;
+       System.out.println("The Cube of the Number is: " +cube);
+   }
+}
+}
