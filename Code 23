@@ -1,0 +1,67 @@
+ 
+/**
+ Data members:                                    int PAN
+                                                                String name
+                                                                double  taxableIncome
+                                                                double  tax
+Member methods:                               inputData()
+                                                            displayData()
+                                                            computeData()
+The tax is calculated according to the following rules:
+Total Annual Taxable Income
+Rate of Taxation
+Up to 60000
+0%
+Above 60000 but up to 150000
+5%
+Above 150000 but up to 500000
+10%
+Above 500000
+15%
+
+ */
+import java.util.*;
+public class TaxCalculator
+{
+    Scanner s = new Scanner(System.in);
+    int PAN;
+    String name;
+    double taxableincome;
+    double tax;
+    void inputData()
+    {
+        System.out.println("Enter Name: ");
+        name=s.nextLine();
+        System.out.println("Enter PAN Number: ");
+        PAN = s.nextInt();
+        System.out.println("Enter Taxable Income: ");
+        taxableincome= s.nextDouble();
+    }
+    void computeData()
+    {
+        if(taxableincome<=60000)
+        tax=0.0;
+        else if(taxableincome>60000 && taxableincome<=150000)
+        tax=0.05*taxableincome;
+        else if(taxableincome>150000 && taxableincome<=500000)
+        tax=0.1*taxableincome;
+        else if(taxableincome>500000)
+        tax=0.15*taxableincome;
+    }
+    void displayData()
+    {
+        System.out.println("The Name is: " +name);
+        System.out.println("Taxable Income is: " +taxableincome);
+        System.out.println("Tax Payable is: " +tax);
+        System.out.println("PAN Number is: " +PAN);
+    }
+    public void main()
+    {
+        TaxCalculator ob = new TaxCalculator();
+        ob.inputData();
+        ob.computeData();
+        ob.displayData();
+    }
+    }
+    
+    
