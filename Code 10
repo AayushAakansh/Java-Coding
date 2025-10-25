@@ -1,0 +1,23 @@
+import java.util.*;
+public class Boards11
+{
+    public void main()
+    { Scanner s = new Scanner(System.in);
+        System.out.println("Enter a Number");
+        int num = s.nextInt();
+        int digits;
+        int square;
+        int sum=0;
+        while(num!=0)
+        { digits = num%10;
+            square = digits*digits;
+            sum=sum+square;
+            num= num/10;
+        }
+        if(sum==num)
+        System.out.println("The Number is an Armstrong Number");
+        else
+        System.out.println("The Number is not an Armstrong Number");
+        
+    
+}}
