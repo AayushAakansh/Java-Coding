@@ -1,0 +1,41 @@
+
+/**
+ Write a menu-driven program to convert Fahrenheit to Celsius and 
+ Celsius to Fahrenheit.
+ */
+import java.util.*;
+public class Boards25
+{
+    public void main()
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("1. Celcius To Fahrenheit");
+        System.out.println("2. Fahrenheit to Celcius");
+        System.out.println("Enter Your choice 1 or 2: ");
+        int choice= s.nextInt();
+        
+        switch(choice)
+        {
+            case 1:
+                System.out.println("Enter Celcius Temperature: ");
+                double celtemp = s.nextDouble();
+                double fahconvert = ((celtemp*9)/5)+32;
+                System.out.println("The Fahrenheit Temperature is: " +fahconvert);
+                break;
+                case 2:
+                    System.out.println("Enter Fahrenheit Temperature: ");
+                    double fahtemp = s.nextDouble();
+                    double celconvert= ((fahtemp-32)*5)/9;
+                    System.out.println("The Celcius Temperature is: " +celconvert);
+                    break;
+                    default:
+                        System.out.println("Invalid choice");
+                        System.out.println("Please Try Again");
+                        break;
+                    }
+                    
+                    
+        }
+    }
+    
+
