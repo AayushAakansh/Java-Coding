@@ -1,0 +1,12 @@
+public class Boards3
+{
+   public void main()
+  { int numsq=0;
+   int printno=0;
+   
+    for(int i=2;i<=11; i++)
+       {
+           numsq = i*i;
+           printno=numsq+1;
+           System.out.println(printno + " ");
+}}}
