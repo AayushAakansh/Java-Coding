@@ -1,0 +1,27 @@
+
+/**
+ Niven/Harshed Number
+ */
+import java.util.*;
+public class Boards19
+{
+    public void main()
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a Number: ");
+        int num=s.nextInt();
+        int d;
+        int sum=0;
+        while(num!=0)
+        {
+            d=num%10;
+            sum=sum+d;
+            num=num/10;
+        }
+        if(num%sum==0)
+        System.out.println("The Number is a Niven Number");
+        else
+        System.out.println("The Number is not a Niven Number");
+    }
+    
+}
